@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Purchasing Office</title>
+    <link rel="stylesheet" href="includes/css/logins.css">
+</head>
+<body>
+    <section>
+
+        <div class="form-box">
+            <div class="form-value">
+                <div class="logo">
+                    <img class="logoo" src="includes/img/Logoo.png" />
+                </div>
+                <form action="ims_validate.php" method="POST">
+                    <h2>Purchasing Office</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input class="username" type="text" name="username" required>
+                        <label  for="username">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input class="password" type="password" name="password" required>
+                        <label  for="password">Password</label>
+                    </div>
+                    <input class="login" type="submit" value="Login">
+                    <div class="" style="margin:10px"></div>
+                    <a href="index.php" style="color: white;">Go to website</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+    history.pushState(null, null, null);
+    window.addEventListener('popstate', function () {
+        history.pushState(null, null, null);
+    });
+</script>
+</body>
+</html>
